@@ -19,9 +19,9 @@ func NewChatgptSessionService() *ChatgptSessionService {
 	return &ChatgptSessionService{
 		&cool.Service{
 			Model: model.NewChatgptSession(),
-			UniqueKey: g.MapStrStr{
-				"email": "邮箱不能重复",
-			},
+// 			UniqueKey: g.MapStrStr{
+// 				"email": "邮箱不能重复",
+// 			},
 			NotNullKey: g.MapStrStr{
 				"email":    "邮箱不能为空",
 				"password": "密码不能为空",
